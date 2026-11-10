@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>@ViewData["Title"] - App</title>
+  <style>
+    body { font: 18px/1.5 system-ui, sans-serif; margin: 0; background: #f4f4f5; color: #18181b; }
+    header { background: #18181b; color: #f4f4f5; padding: .75rem 1.5rem; font-weight: 600; }
+    main { max-width: 44rem; margin: 2rem auto; padding: 0 1.5rem; }
+    footer { max-width: 44rem; margin: 2rem auto; padding: 0 1.5rem; color: #71717a; font-size: .85rem; }
+    a { color: #c2410c; }
+  </style>
+</head>
+<body>
+  <header>App</header>
+  <main>@RenderBody()</main>
+  <footer>Build @(Environment.GetEnvironmentVariable("APP_BUILD") ?? "local") &middot; <a href="/health">health</a> &middot; <a href="/api/info">info</a></footer>
+</body>
+</html>
